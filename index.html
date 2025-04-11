@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marco Antonio</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <select id="tema">
+                <option value="claro" selected>Claro</option>
+                <option value="escuro">Escuro</option>
+            </select>
+        </nav>
+
+        <div>
+            <div id="Infos">
+                <img src="images/minhaFoto.jpeg" />
+                <h1 id="nome"></h1>
+                <p id="paragrafo">
+                    Atualmente estou cursando bacharelado em Ciência da Computação.<br>
+                    Minha jornada foi impulsionada pela paixão pelo desenvolvimento de<br>
+                    soluções de computação inovadoras e eficientes.
+                </p>
+            </div>
+
+            <div id="tecnologia">
+                <a>
+                    <img class="iconTec" src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png">
+                    <p>Python</p>
+                </a>
+                <a>
+                    <img class="iconTec" src="images/django-icon.svg">
+                    <p>Django</p>
+                </a>
+                <a>
+                    <img class="iconTec" src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png">
+                    <p>JavaScript</p>
+                </a>
+                <a>
+                    <img class="iconTec" src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png">
+                    <p>React</p>
+                </a>
+                <a>
+                    <img class="iconTec" src="https://cdn-icons-png.flaticon.com/512/226/226777.png">
+                    <p>Java</p>
+                </a>
+                <a>
+                    <img class="iconTec github" src="https://cdn-icons-png.flaticon.com/512/25/25231.png">
+                    <p>Github</p>
+                </a>
+            </div>
+
+            <a href="#projetos" id="setaBaixo">
+                <img src="images/setaProjetos.svg">
+            </a>
+        </div>
+
+    </header>
+
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <h3> Veja meus repositórios do github</h3>
+
+        <div class="repos-container" id="repos"></div>
+    </section>
+
+    <section id="jogoDigitos">
+        <h2>Jogo da Senha</h2>
+        <h3>Adivinhe a combinação de 4 dígitos</h3>
+        <input type="text" id="tentativa" maxlength="4" placeholder="Digite 4 dígitos" />
+        <div>
+            <button onclick="verificarTentativa()">Verificar</button>
+            <button onclick="mostrarResposta()">Mostrar resposta</button>
+            <button onclick="reiniciarJogo()">Reiniciar</button>
+        </div>
+        <ul id="historicoTentativas"></ul>
+    </section>
+
+    <section id="contato">
+        <h1>Contato</h1>
+        <h2>Gostou do meu trabalho?</h2>
+        <p>entre em contato ou acompanhe as minhas redes sociais!</p>
+        <div class="carousel">
+            <span class="arrow" onclick="mover(-1)">‹</span>
+            <a id="linkContato" href="#" target="_blank">
+                <img id="imgContato" src="" alt="Contato" />
+            </a>
+            <span class="arrow" onclick="mover(1)">›</span>
+        </div>
+        <p>clique na imagem</p>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
